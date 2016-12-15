@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>静态页面</title>
+	<style>
+	*{
+		margin:0px;
+		padding: 0px;
+		line-height: 1;
+		font-family: Microsoft Yahei;
+	}
+	.box{
+		width: 1263px;
+		margin:0 auto;
+	}
+	.topNav{
+		height: 101px;
+	}
+	.topNav .logo{
+		font-size: 30px;
+		color: #3E2247;
+		margin-left: 65px;
+	}
+	.topNav .logo .your{
+		float: left;
+		line-height: 101px;
+	}
+	.topNav .logo .name{
+		float: left;
+		line-height: 101px;
+		color: #DEB5E2;
+	}
+	ul{
+		list-style: none
+	}
+	.topNav .youName {
+		padding: 25px 0;
+		float: left;
+		margin-left: 230px;
+	}
+	.topNav .youName li{
+		font-size: 14px;
+		border-radius: 5px;
+		width: 90px;
+		height: 45px;
+		float: left;
+		line-height: 40px;
+		color:#999999;
+	}
+	.topNav .youName li a{
+		width: 70px;
+		line-height: 45px;
+		display: block;
+		margin:0 auto;
+	}
+	.topNav .youName .red{
+		color: white
+		background-color:#F77B6F;
+	}
+	.topNav .hunt{
+		float: right;
+		width: 25px;
+		height: 25px;
+		margin-top: 38px;
+		margin-right: 40px;
+	}
+	.topNav .youName .topRight{
+		margin-left: 20px
+	}
+	.topBottom{
+	 	height: 124px;
+	 	background-color: #475268;
+	 	color: white;
+	 	line-height: 124px;
+	}
+	.topBottom .my{
+		font-size: 20px;
+		margin-left: 80px;
+	}
+	.topBottom .bottomRight {
+		font-size: 14px;
+		margin-right: 76px;
+		margin-top: 54px;
+		float: right;
+	 	color: white;
+	}
+	.topBottom .bottomRight .slash{
+		margin:0 5px 0 5px;
+	}
+	.topBottom .bottomRight .what{
+		color: #F77B6F;
+	}
+	.topBottom .bottomRight .you{
+		color: #F77B6F;
+	}
+	
+	.middle{
+		margin-top: 40px;
+	}
+	.middle .middleCarousel{
+		width: 457px;
+		height: 256px;
+		background: url(ni.jpg) no-repeat;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    			src='ni.jpg',
+    			sizingMethod='scale');
+		background-size: 100% auto;
+		margin-left:62px;
+		position: relative;
+		float: left;
+	}
+	.middle .middleCarousel .carouselLeft{
+		filter:alpha(opacity=0.7);
+		opacity: 0.7;
+		top:50%;
+		margin-top: -26px;
+		width: 46px;
+		height: 51px;
+		background-color: #808080;
+		position: absolute;
+
+	}
+	.middle .middleCarousel .carouselRight{
+		filter:alpha(opacity=0.7);
+		opacity: 0.7;
+		top:50%;
+		margin-top: -26px;
+		right: 0px;
+		width: 46px; 
+		height: 52px;
+		background-color: #808080;
+		position: absolute;
+	}
+	.middle .welcome{
+		margin-left: 32px;
+		font-weight: normal;
+		width: 650px;
+		float: left;
+	}
+	.middle .welcome p{
+		font-size: 28px;
+		color: #475168;
+		                                                                                                        
+	}
+	.middle .welcome div{
+		color: #999999;
+		line-height: 30px;
+		text-indent: 40px;
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.middle .protagonist .hreo{
+		margin-top:60px;
+		color: #898686;
+		width: 600px;
+		margin-left: 62px;
+		float: left;
+	}
+	.middle .protagonist .hreoine{
+		margin-top:60px;
+		color: #898686;
+		width: 550px;
+		float: left;
+	}
+	.middle .protagonist .hreo .hreoPicture{
+		float: left;
+		border-radius: 50%;
+		width: 58px;
+		height: 58px;
+		background:url(nan.jpg) no-repeat;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    			src='nan.jpg',
+    			sizingMethod='scale');
+		background-size: 100% 100%;
+	}
+	.middle .protagonist .hreoine .hreoinePicture{
+		float: left;
+		border-radius: 50%;
+		width: 58px;
+		height: 58px;
+		background:url(nv.jpg) center no-repeat;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    			src='nv.jpg',
+    			sizingMethod='scale');
+		background-size: 100% 100%;
+	}
+	.middle .protagonist  p{
+		line-height: 30px;
+		float: left;
+		margin-left: 20px;
+	}
+	.middle .protagonist .introduce{
+		line-height: 20px;
+		width: 470px;
+		font-size: 14px;
+	}
+	.middle .roughly{
+		height: 387px;
+		background-color: #F2F2F2;
+		margin-top: 58px;
+	}	
+	.middle .roughly .rouLeft{
+		margin-left:62px;
+		float: left;
+		margin-top: 80px;
+		width: 457px;
+	}
+	.middle .roughly .rouLeft i{
+		float: left;
+		border-radius: 50%;
+		width: 99px;
+		height: 99px;
+		background: url(aa.jpg) no-repeat;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    			src='aa.jpg',
+    			sizingMethod='scale');
+		background-size: 100% 100%;
+	}
+	.middle .roughly .rouLeft span{
+		float: left;
+		margin-left:20px;
+		margin-top: 15px;
+	}
+	.middle .roughly .rouLeft span .author{
+		color: #B1ABBA;
+		font-size: 12px;
+		line-height: 30px;
+	}
+	.middle .roughly .rouLeft .leftBottom{
+		font-size: 12px;
+		text-indent: 24px;
+		float: left;
+		width: 100%;
+		margin-top: 10px;
+		height: 122px;
+		background-color:#E1E1E1;
+	}
+	.middle .roughly .rouLeft .leftBottom p{
+		margin-top: 20px;
+		line-height: 20px;
+		color: #8A7979;
+	}
+	.middle .roughly .rouRight{
+		width: 654px;
+		margin-left:30px;
+		margin-top: 80px;
+		float:left;
+	}
+	.middle .roughly .rouRight p{
+		display: block;
+		margin-bottom: 30px;
+	}
+	.middle .roughly .rouRight .sta{
+		position: relative;
+		border-radius: 5px;
+		margin-top: 20px;
+		height: 30px;
+		background-color: #E1E1E1;
+	}
+	.middle .roughly .rouRight .sta .data{
+		font-size: 12px;
+		color: white;
+		padding-left: 10px;
+		line-height: 30px;
+		border-radius: 5px 0 0 5px;
+		width: 400px;
+		height: 30px;
+		position: absolute;
+		background-color: #F37D6C;
+	}
+	.middle .roughly .rouRight .sta .data1{
+		width: 550px;
+	}
+	.middle .roughly .rouRight .sta .data2{
+		border-radius: 5px;
+		width: 645px;
+	}
+	.middle .roughly .rouRight .sta .data3{
+		width: 510px;
+	}
+	.middle .ppt{
+		margin-top: 56px;
+	}
+	.middle .ppt h2{
+		font-size: 25px;
+		font-weight: normal;
+		text-align: center;
+	}
+	.middle .ppt >p{
+		line-height: 40px;
+		text-align: center;
+		color:#B1ABBA
+	}
+	.middle .ppt ul{
+		margin-top: 76px;
+		text-align: center;
+	}
+	.middle .ppt ul li{
+		margin-left: 60px;
+		float: left;
+		width: 340px;
+		height: 400px;
+	}
+	.middle .ppt ul li .picture_1{
+		margin-left:65px;
+		display: block;
+		background:url(ew.jpg) no-repeat;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    			src='ew.jpg',
+    			sizingMethod='scale');
+		width: 210px;
+		height: 210px;
+		border-radius: 50%;
+		background-size:100% 100%;
+	}
+	.middle .ppt ul li .picture_2{
+		margin-left:65px;
+		display: block;
+		background:url(ew.png) no-repeat;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    			src='ew.png',
+    			sizingMethod='scale');
+		width: 210px;
+		height: 210px;
+		border-radius: 50%;
+		background-size:100% 100%;
+
+	}
+	.middle .ppt ul li .picture_3{
+		margin-left:65px;
+		display: block;
+		background:url(ewe.jpg) no-repeat;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    			src='ewe.jpg',
+    			sizingMethod='scale');
+		width: 210px;
+		height: 210px;
+		border-radius: 50%;
+		background-size:100% 100%;
+	} 
+	.middle .ppt ul li .pRed{
+		line-height: 30px;
+		color:#F77B6F
+	}
+	.middle .ppt ul li .gray{
+		color: #B1ABBA
+	}
+	.middle .ppt ul li div{
+		color:  #B1ABBA;
+		margin-top: 60px;
+	}
+	.middle .ppt ul li div .grayy{
+		line-height: 25px;
+	}
+	/*底部栏*/
+	.bottom{
+		margin-top: 66px;
+		height: 312px;
+		background-color: #475268;
+	}
+	.bottom div{
+		margin-top: 50px;
+		color: white;
+		float: left;
+	}
+	.bottom div p {
+		font-size: 12px;
+		line-height: 30px;
+	}	
+	.bottom div .bigz{
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.bottom .touch{
+		margin-left: 62px;
+	}
+	.bottom .touch .ea span{
+		color: #F37C6A
+	} 
+	.bottom .complaint{
+		margin-left: 106px;
+	}
+	.bottom .ink{
+		margin-left: 420px;
+	}
+	.bottom .ink ul{
+		width: 250px;
+	}
+	.bottom .ink ul li{
+		margin: 0 10px 10px 0;
+		float: left;
+		width: 50px;
+		height: 50px;
+		background-color: #505B71;
+	}
+	</style>
+</head>
+<body>
+	<div class="bodyBox">
+		<div class="box">
+			<div class="topNav">
+				<div class="logo">
+					<span class="your">君の名</span>
+					<span class="name">前は</span>
+				</div>
+				<div class="navbar">
+					<ul class="youName">
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li class="red">
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li class="topRight">
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+						<li>
+							<a>あなたは谁</a>
+						</li>
+					</ul>
+					<div class="hunt">
+						<img src="2016-12-09_204248.png">
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="topBottom">
+				<span class="my">あなたは谁</span>
+				<div class="bottomRight">
+					<span class="what">あなた</span>
+					<span class="slash">/</span>
+					<span class="you">の名前</span>
+					<span class="slash">/</span>
+					<span>は何</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+				<div class="middle">
+					<div class="middleCarousel">
+						<span class="carouselLeft"></span>
+						<span class="carouselRight"></span>
+					</div>
+					<div class="welcome">
+						<p>ようこそ、あなたの名前</p>
+						<div>
+							 朝、目が覚める（さめる）となぜが泣いている そういうことが時々ある 見ていだはずの夢は、いつも思い出せない ただ、ずっと何か、誰かを探している そういう気持ちに取り付かれたとは、多分、あの日から あの日、星が降った日 それはまるで まるで、夢の景色（けしき）のように、ただひたすらに 美しい眺め（ながめ）だったあなたの名前さえ覚えた
+							あなたは世界のどこか
+							私はきっと、あなたに会いに行く。 朝、目が覚める（さめる）となぜが泣いている そういうことが時々ある 見ていだはずの夢は、いつも思い出せない ただ、ずっと何
+						</div>
+					
+					</div>
+					<div style="clear: both;"></div>
+					<div class="protagonist">
+						<div class="hreo">
+							<div class="hreoPicture"></div>
+							<p>主演男</p>
+							<p class="introduce">
+								日文名:立花泷
+								日本名:ちたばきたな
+								登场する作品:『あなたの名前。』
+								性別:男
+								年齢:14歳(国で生)、17歳(高校生)、22歳(卒業後)
+							</p>
+						</div>
+						<div class="hreoine">
+							<div class="hreoinePicture"></div>
+							<p>ヒロイン</p>
+							<p class="introduce">
+								性別:女性
+								年齢:17歳(高校生)、25歳(と泷出会ったとき)
+								身分:岐阜県立花糸守高校二年生3組学生
+								関連人物:立花泷
+							</p>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="roughly">
+						<div class="rouLeft">
+							<i></i>
+							<span>
+								<p>君の名前は</p>
+								<p class="author">著者新海监督</p>
+
+							</span>	
+							<div class="leftBottom">
+								<p>
+									1千年で初めての彗星回帰を访れ、1か月后 朝、目が覚める（さめる）となぜが泣いている そういうことが時々ある 見ていだはずの夢は、いつも思い出せない ただ、ずっと何の日本のある深山の田舎の町。女子高校生三つ叶た毎日の生活は忧郁で、彼女の悩みがあるだけを務めた父親の町長に行われた選挙運動、そして幸司神社の古い习惯。この小さな町で、周りからも爱は心配の老人だ。その三つ叶は大都市に満ちた憧れた。
+								</p>
+							</div>
+						</div>
+						<div class="rouRight">
+							<p>総合 実力</p>
+							<div class="sta">
+								<div class="data">興行 : 90% パワー</div>
+							</div>
+							<div class="sta">
+								<div class="data data1">観客动员数は : 99999観影人</div>
+							</div>
+							<div class="sta">
+								<div class="data data2">ヒット程度 : 100%</div>
+							</div>
+							<div class="sta">
+								<div class="data data3">アニメーション作家 : 新海监督</div>
+							</div>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<div class="ppt">
+						<h2>君の名前は</h2>
+						<p>1千年で初めての彗星回帰を访れ、1か月后の日本のある深山の田舎の町。二人はこうして、梦に出会い互いに</p>
+						<ul>
+							<li>
+								<i class="picture_1"></i>
+								<p class="pRed">彗星回帰を</p>
+								<p class="gray">その三つ叶は大</p>
+								<div>
+									<p class="grayy">その三つ叶は大都市に満ちた憧れた</p>
+									<p class="grayy">二人はこうして、梦に出会い互いに</p>
+									<p class="grayy">その三つ叶は大都市に満ちた憧</p>
+								</div>
+							</li>
+							<li>
+								<i class="picture_2"></i>
+								<p class="pRed">二人はこう</p>
+								<p class="gray">長に行われた選</p>
+								<div>
+									<p class="grayy">彼女の悩みがあるだけを務めた父親の</p>
+									<p class="grayy">1か月后の日本のある深山の田舎の</p>
+									<p class="grayy">で初めての彗星回帰を访れ</p>
+								</div>
+							</li>
+							<li>
+								<i class="picture_3"></i>
+								<p class="pRed">梦に出</p>
+								<p class="gray">りからも爱は心配</p>
+								<div>
+									<p class="grayy">二人はこうして、梦に出会い互いに</p>
+									<p class="grayy">1か月后の日本のある深山の田舎の</p>
+									<p class="grayy">の悩みがあるだけを務めた父親の</p>
+								</div>
+							</li>
+						</ul>
+						<div style="clear: both"></div>
+					</div>
+				</div>
+		<!--底部栏-->
+			<div class="bottom">
+				<div class="touch">
+					<p class="bigz">本部の電話</p>
+					<p>興行 : 90% パワー</p>
+					<p>本部の住所 : 日本</p>
+					<p>電話 : 536-789921</p>
+					<p>固定電話 :536-789921</p>
+					<p class="ea">
+						Email : <span>support@vectorlab.com</span>
+					</p>
+				</div>
+				<div class="complaint">
+					<p class="bigz">クレームサイト</p>
+					<p>サイトのお手本 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -パワー<</p>
+				</div>
+				<div  class="ink">
+					<p class="bigz">スポンサー</p>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
